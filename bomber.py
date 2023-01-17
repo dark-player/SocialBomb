@@ -259,7 +259,8 @@ def workernode(mode, cc, target, count, delay, max_threads):
     print()
     input(mesgdcrt.CommandMessage(
         "Press [CTRL+Z] to suspend the bomber or [ENTER] to resume it"
-        " Now press ENTER to start"))
+       ))
+    print "  Now press ENTER to start  "
 
     if len(APIProvider.api_providers) == 0:
         mesgdcrt.FailureMessage("Your country/target is not supported yet")

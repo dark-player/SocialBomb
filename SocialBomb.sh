@@ -29,7 +29,7 @@ banner() {
     if ! [ -x "$(command -v figlet)" ]; then
         echo 'Introducing SocialBomb'
     else
-        figlet TBomb
+        figlet SocialBomb
     fi
     if ! [ -x "$(command -v toilet)" ]; then
         echo -e "\e[4;34m This Bomber Was Created By \e[1;32mSpooky Hackers \e[0m"
@@ -112,6 +112,7 @@ do
     echo "Press 3 To  Start MAIL Bomber (Not Yet Available)"
     echo "Press 4 To  Update (Works On Linux And Linux Emulators) "
     echo "Press 5 To  Exit "
+    echo " "
     read ch
     clear
     if [ $ch -eq 1 ];then
@@ -127,7 +128,7 @@ do
         echo -e "\e[1;34m Downloading Latest Files..."
         rm -f .update
         $PYTHON bomber.py --update
-        echo -e "\e[1;34m RUN TBomb Again..."
+        echo -e "\e[1;34m RUN SocialBomb Again..."
         pause
         exit
     elif [ $ch -eq 5 ];then
